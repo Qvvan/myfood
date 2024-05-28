@@ -11,7 +11,8 @@ class Dish(models.Model):
     name = models.CharField(max_length=200)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    image_url = models.URLField(max_length=200)
+    image_url = models.URLField(max_length=200, default='https://example.com/default_image.jpg')
+
 
     def __str__(self):
         return self.name

@@ -1,0 +1,29 @@
+.dish-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.dish-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.dish-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.dish-item .details {
+  margin-top: 10px;
+}
+
+.dish-item h2 {
+  margin-top: 0;
+}
+
+.dish-item p {
+  margin-bottom: 5px;
+}
